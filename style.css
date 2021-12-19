@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+main {
+    padding-bottom: 150px;
+}
+
 section {
     margin-bottom: 100px;
 }
@@ -14,6 +18,30 @@ h2 {
     letter-spacing: -2px;
     font-weight: bold;
     padding: 75px 0px 15px 0px;
+}
+
+h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: -1px;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: lightgrey;
+    margin-top: 5px;
+    padding: 5px 0px 5px 0px;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+}
+
+.pros {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    oborder: solid 1px blue;
+    border-radius: 15px;
+}
+
+.pros img {
+    width: 100px;
 }
 
 .sectionContent {
@@ -35,6 +63,10 @@ p {
 
 .contactLi {
     margin: 5px 20px 0px 20px;
+}
+
+.contactForm {
+    width: 50%;
 }
 
 .bd-placeholder-img {

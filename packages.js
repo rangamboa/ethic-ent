@@ -1,35 +1,35 @@
 const packageEl = document.getElementById('packageDetails');
 
 let residentialArray = [
-    'air vent dust',
-    'appliance wipe-down',
-    'baseboard/trim dust',
-    'cabinet/shelf surface wipe-down', 
-    'carpet/hard flooring vacuum',
-    'cobweb removal',
-    'furniture dust & wipe-down',
-    'hard flooring mop',
-    'garbage removal/liner replacement',
-    'interior window/mirror clean',
-    'light fixture/ceiling fan (within arm\'s reach) dust',
-    'sink cleaning',
-    'switchplate wipe-down',
-    'toilet clean & disinfect',
-    'window blinds & sills dust',
+    '<strong>air vent</strong> dust',
+    '<strong>appliance</strong> wipe-down',
+    '<strong>baseboard/trim</strong> dust',
+    '<strong>cabinet/shelf</strong> surface wipe-down', 
+    '<strong>carpet/hard flooring</strong> vacuum',
+    '<strong>cobweb</strong> removal',
+    '<strong>furniture</strong> dust & wipe-down',
+    '<strong>hard flooring</strong> mop',
+    '<strong>garbage</strong> removal/liner replacement',
+    '<strong>interior window/mirror</strong> clean',
+    '<strong>light fixture/ceiling fan</strong> (within reach) dust',
+    '<strong>sink</strong> cleaning',
+    '<strong>switchplate</strong> wipe-down',
+    '<strong>toilet</strong> clean & disinfect',
+    '<strong>window blinds & sills</strong> dust',
 ];
 
 let commercialArray = [
-    'cabinet/shelf surface wipe-down', 
-    'carpet/hard flooring vacuum',
-    'interior window/mirror clean',
-    'garbage removal/liner replacement',
-    'hard flooring mop',
-    'light fixture/ceiling fan (within arm\'s reach) dust',
-    'office equipment dust',
-    'sink cleaning',
-    'switchplate wipe-down',
-    'toilet clean & disinfect',
-    'window blinds & sills dust',
+    '<strong>cabinet/shelf</strong> surface wipe-down', 
+    '<strong>carpet/hard flooring</strong> vacuum',
+    '<strong>interior window/mirror</strong> clean',
+    '<strong>garbage</strong> removal/liner replacement',
+    '<strong>hard flooring</strong> mop',
+    '<strong>light fixture/ceiling fan</strong> (within reach) dust',
+    '<strong>office equipment</strong> dust',
+    '<strong>sink</strong> cleaning',
+    '<strong>switchplate</strong> wipe-down',
+    '<strong>toilet</strong> clean & disinfect',
+    '<strong>window blinds & sills</strong> dust',
 ];
 
 function showList(list) {
@@ -40,9 +40,9 @@ function showList(list) {
 
     let details = '<p>';
     for (i = 0; i < list.length; i++) {
-        details += '&middot;&nbsp;' + list[i] + '<br>';
+        details += '✅&nbsp;' + list[i] + '<br>';
     }
-    details += '</p>';
+    details += '✅&nbsp;<em>and more as required/requested</em></p>';
 
     packageEl.innerHTML = details;
 }
