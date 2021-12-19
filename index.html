@@ -7,22 +7,24 @@
     <link href="style.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 <body>
     
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center align-items-end py-3 border-bottom">
             <a href="#home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="assets/images/logo.png" title="Ethical Enterprises Cleaning Service, LLC" alt="logo" />
+                <img src="assets/images/logo.png" title="Ethical Enterprises Cleaning Service, LLC" alt="logo" class="logo" />
                 <!-- <span class="fs-4">Simple header</span> -->
             </a>
             
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Our Services</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="#services" class="btn btn-info">Our Services</a></li>
+                <li class="nav-item"><a href="#about" class="btn btn-info">About Us</a></li>
+                <li class="nav-item"><a href="#contact" class="btn btn-info">Contact Us</a></li>
             </ul>
         </header>
         
@@ -30,16 +32,48 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item contactLi"><h5><img src="assets/images/icon-phone.png" width="35px">&nbsp;(206) 555-5555</h5></li>
-                <li class="nav-item contactLi"><h5><img src="assets/images/icon-email.png" width="35px">&nbsp;EthicalEnterprisesLLC@gmail.com</h5></li>
+                <li class="nav-item contactLi"><h5><img src="assets/images/icon-email.png" width="35px">&nbsp;<a href="mailto:EthicalEnterprisesLLC@gmail.com">EthicalEnterprisesLLC@gmail.com</a></h5></li>
             </ul>
 
         </header>
         
         <main>
-            <section id="home"><img src="assets/images/welcome.png" class="sectionHeading">
-                <div>
+            <section id="home">
+                <h2>Welcome!</h2>
+                <div class="sectionContent">
+                    <p>We are <strong>Ethical Enterprises Cleaning Service</strong>--  a licensed company helping you protect your family and run your business. With our experienced, knowledgeable and friendly staff, our goals are superior work and complete client satisfaction.</p>
+
+                    <p>We offer both <strong>residential and commercial packages</strong>, so whether you're a facility manager or homeowner, we've got something that's perfect for your cleaning requirements-- from cozy apartments to busy office suites.</p>
+
+                    <p>Our <strong>well-trained staff</strong> will eliminate the stress of cleaning your space while accomplishing quality work at a price that makes sense.</p>
+
+                    <p><a href="#contact">Give us a call!</a> It's the first easy step to a sparkling clean place.</p>
+                </div>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="sectionContent">
+                    <p>We are very proud to offer <strong>residential</strong> as well as <strong>commercial</strong> property cleaning packages! Click the buttons below for details.</p>   
+
+                    <div class="d-flex flex-wrap justify-content-center align-items-start py-3 oborder-bottom" style="oborder:solid 1px black;">
+                        <div style="boorder:solid 1px pink;">
+                            <button type="button" class="btn btn-info" id="resBtn" onClick="showList(this.id);">Residential Package</button><br>
+                            <button type="button" class="btn btn-info" id="comBtn" onClick="showList(this.id);">Commercial Package</button>
+                        </div>
+                        <div id="packageDetails" style="width:70%;oborder:dotted 1px red;padding-left:15px;">
+                                initially blank.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <div class="sectionContent">
                     <p>Red Diamond Cleaning Services is a licensed cleaning company dedicated to helping you run your business and protecting your family. With over 20 years of excellence and continuous team training, our specialized cleaning services are masters in the art of cleaning. Our expertise lies in our quality work and distinguished customer satisfaction.</p>
 
+    
                     <p>So if you're a building owner or facility manager, come find us for formidable commercial cleaning. More so, we also provide services to homeowners for a superior standard of residential decontamination. Infact, we appeal to anyone who seeks a hand to wipe their floors and window ceilings clean.</p>
 
                     <p>Our well-trained employees save you from going through the hassle and leave quality work with every swipe of a smudge. With excellent quality assurance, we offer the best value at the most affordable price. Our exceptional customer services together with a licensed and insured team of trained cleaners offer the best cleaning service in town.</p>
@@ -48,32 +82,9 @@
                 </div>
             </section>
 
-            <section id="services"><img src="assets/images/our-services.png" class="sectionHeading">
-                <div>
-                    <p>Red Diamond Cleaning Services is a licensed cleaning company dedicated to helping you run your business and protecting your family. With over 20 years of excellence and continuous team training, our specialized cleaning services are masters in the art of cleaning. Our expertise lies in our quality work and distinguished customer satisfaction.</p>
-
-                    <p>So if you're a building owner or facility manager, come find us for formidable commercial cleaning. More so, we also provide services to homeowners for a superior standard of residential decontamination. Infact, we appeal to anyone who seeks a hand to wipe their floors and window ceilings clean.</p>
-
-                    <p>Our well-trained employees save you from going through the hassle and leave quality work with every swipe of a smudge. With excellent quality assurance, we offer the best value at the most affordable price. Our exceptional customer services together with a licensed and insured team of trained cleaners offer the best cleaning service in town.</p>
-
-                    <p>Feel free to get in touch with us, we are one call away to make your place dirt-free!</p>
-                </div>
-            </section>
-
-            <section id="about"><img src="assets/images/about-us.png" class="sectionHeading">
-                <div>
-                    <p>Red Diamond Cleaning Services is a licensed cleaning company dedicated to helping you run your business and protecting your family. With over 20 years of excellence and continuous team training, our specialized cleaning services are masters in the art of cleaning. Our expertise lies in our quality work and distinguished customer satisfaction.</p>
-
-                    <p>So if you're a building owner or facility manager, come find us for formidable commercial cleaning. More so, we also provide services to homeowners for a superior standard of residential decontamination. Infact, we appeal to anyone who seeks a hand to wipe their floors and window ceilings clean.</p>
-
-                    <p>Our well-trained employees save you from going through the hassle and leave quality work with every swipe of a smudge. With excellent quality assurance, we offer the best value at the most affordable price. Our exceptional customer services together with a licensed and insured team of trained cleaners offer the best cleaning service in town.</p>
-
-                    <p>Feel free to get in touch with us, we are one call away to make your place dirt-free!</p>
-                </div>
-            </section>
-
-            <section id="contact"><img src="assets/images/contact-us.png" class="sectionHeading">
-                <div>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div class="sectionContent">
                     <p>Red Diamond Cleaning Services is a licensed cleaning company dedicated to helping you run your business and protecting your family. With over 20 years of excellence and continuous team training, our specialized cleaning services are masters in the art of cleaning. Our expertise lies in our quality work and distinguished customer satisfaction.</p>
 
                     <p>So if you're a building owner or facility manager, come find us for formidable commercial cleaning. More so, we also provide services to homeowners for a superior standard of residential decontamination. Infact, we appeal to anyone who seeks a hand to wipe their floors and window ceilings clean.</p>
@@ -86,6 +97,9 @@
         </main>
 
     </div>
+
+    <script src="packages.js"></script>
+
     
 </body>    
     

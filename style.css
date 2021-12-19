@@ -1,9 +1,36 @@
-section {
-    margin-bottom: 250px;
+body {
+    obackground-image: url(assets/images/bg.jpg);
+    background-image: linear-gradient(to bottom, white, rgba(100,100,255,0));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.sectionHeading {
-    padding-left: 10px;
+section {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: -2px;
+    font-weight: bold;
+    padding: 75px 0px 15px 0px;
+}
+
+.sectionContent {
+    padding-left: 25px;
+}
+
+p {
+    font-size: 125%;
+    line-height:1.5em;
+}
+
+.btn-info {
+    width: 125px;
+    margin: 5px;
+    font-weight: bold;
+    border: solid 3px lightgrey;
+    border-radius: 15px;
 }
 
 .contactLi {
@@ -16,6 +43,12 @@ section {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+}
+
+@media (min-width: 350px) {
+    .logo {
+        align-items: center;
+    }
 }
 
 @media (min-width: 768px) {
