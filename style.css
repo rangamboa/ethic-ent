@@ -19,6 +19,7 @@ section {
 h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: -2px;
+    color: rgb(63, 175, 97);
     font-weight: bold;
     padding: 75px 0px 15px 0px;
 }
