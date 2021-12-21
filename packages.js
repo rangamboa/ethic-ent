@@ -34,11 +34,18 @@ let commercialArray = [
 
 function showList(list) {
     list=list.charAt(0);
+    let pack = '';
 
-    if (list=='r') list = residentialArray;
-        else list = commercialArray;
+    if (list == 'r') {
+            list = residentialArray;
+            pack = '<h3 style="background-color:white; border:none;">Residential Package Checklist</h3>';
+        }
+        else {
+            list = commercialArray;
+            pack = '<h3 style="background-color:white; border: none;">Commercial Package Checklist</h3><p>';
+        }
 
-    let details = '<p>';
+    let details = pack + '<p>';
     for (i = 0; i < list.length; i++) {
         details += '✅&nbsp;' + list[i] + '<br>';
     }
