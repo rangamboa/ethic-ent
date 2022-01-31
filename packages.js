@@ -1,6 +1,7 @@
 const packageEl = document.getElementById('packageDetails');
 
 let residentialArray = [
+    '<em>We also clean <strong>condominiums!</strong></em><br>',
     '<strong>air vent</strong> dust',
     '<strong>appliance</strong> wipe-down',
     '<strong>baseboard/trim</strong> dust',
@@ -19,6 +20,7 @@ let residentialArray = [
 ];
 
 let commercialArray = [
+    '<em>We also clean <strong>chiropractor and dental offices!</strong></em><br>',
     '<strong>cabinet/shelf</strong> surface wipe-down', 
     '<strong>carpet/hard flooring</strong> vacuum',
     '<strong>interior window/mirror</strong> clean',
