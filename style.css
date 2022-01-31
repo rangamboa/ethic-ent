@@ -35,16 +35,21 @@ h3 {
     border-radius: 15px;
 }
 
-.h3Form {
+.h3blank {
     background-color: white;
     border: none;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    line-height:1.5em;
 }
 
 .pros {
     width: 30%;
     margin: 10px;
     text-align: center;
-    oborder: solid 1px blue;
     border-radius: 15px;
 }
 
@@ -54,12 +59,6 @@ h3 {
 
 .sectionContent {
     padding-left: 25px;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 125%;
-    line-height:1.5em;
 }
 
 .btn-info {
@@ -93,6 +92,7 @@ footer {
 }
 
 header {
+    position: fixed;   
     border: solid rgb(104, 216, 138);      
     border-top-width: 50px;
     border-left-width: 0px;

@@ -38,11 +38,11 @@ function showList(list) {
 
     if (list == 'r') {
             list = residentialArray;
-            pack = '<h3 style="background-color:white; border:none;">Residential Package Checklist</h3>';
+            pack = '<h3 class="h3blank">Residential Package Checklist</h3>';
         }
         else {
             list = commercialArray;
-            pack = '<h3 style="background-color:white; border: none;">Commercial Package Checklist</h3><p>';
+            pack = '<h3 class="h3blank">Commercial Package Checklist</h3><p>';
         }
 
     let details = pack + '<p>';
