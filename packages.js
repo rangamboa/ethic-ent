@@ -1,7 +1,7 @@
 const packageEl = document.getElementById('packageDetails');
 
 let residentialArray = [
-    '<em>We also clean <strong>condominiums!</strong></em><br>',
+    '<em>We also clean <strong>condominiums.</strong></em><br>',
     '<strong>air vent</strong> dust',
     '<strong>appliance</strong> wipe-down',
     '<strong>baseboard/trim</strong> dust',
@@ -20,7 +20,7 @@ let residentialArray = [
 ];
 
 let commercialArray = [
-    '<em>We also clean <strong>chiropractor and dental offices!</strong></em><br>',
+    '<em>We also clean <strong>chiropractor and dental offices.</strong></em><br>',
     '<strong>cabinet/shelf</strong> surface wipe-down', 
     '<strong>carpet/hard flooring</strong> vacuum',
     '<strong>interior window/mirror</strong> clean',
@@ -49,9 +49,9 @@ function showList(list) {
 
     let details = pack + '<p>';
     for (i = 0; i < list.length; i++) {
-        details += '✅&nbsp;' + list[i] + '<br>';
+        details += '&middot;&nbsp;' + list[i] + '<br>';
     }
-    details += '✅&nbsp;<em>and more as required/requested</em></p>';
+    details += '&middot;&nbsp;<em>and more as required/requested</em></p>';
 
     packageEl.innerHTML = details;
 }
