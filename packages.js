@@ -51,7 +51,7 @@ function showList(list) {
     for (i = 0; i < list.length; i++) {
         details += '&middot;&nbsp;' + list[i] + '<br>';
     }
-    details += '&middot;&nbsp;<em>and more as required/requested</em></p>';
+    details += '<br>&middot;&nbsp;<em>and more as required/requested</em></p>';
 
     packageEl.innerHTML = details;
 }

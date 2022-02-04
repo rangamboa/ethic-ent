@@ -9,8 +9,7 @@ main {
 }
 
 section {
-    padding-top: 250px;
-    opadding-bottom: 20px;
+    padding-top: 200px;
     obackground-image: url(assets/images/logo-bg.png);
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -77,6 +76,19 @@ p {
     border-radius: 5px;
 }
 
+.btn-info:active {
+    background-color: #CBF3F0;  
+    border: solid 1px #2EC4B6;
+    border-radius: 5px;
+}
+
+a:link, a:visited {
+    color: #2EC4B6;
+}
+
+a:hover {
+    color: #CBF3F0;
+}
 
 .contactLi {
     margin: 5px 20px 0px 20px;
