@@ -90,6 +90,10 @@ a:hover {
     color: #CBF3F0;
 }
 
+a .blktext {
+    color: black;
+}
+
 .contactLi {
     margin: 5px 20px 0px 20px;
 }
@@ -103,7 +107,7 @@ header {
     top: 0; 
     width: 100%;
     border: solid #FF9F1C;
-    border-top-width: 50px;
+    border-top-width: 30px;
     border-left-width: 0px;
     border-right-width: 0px;
     background-color: white;
