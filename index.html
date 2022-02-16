@@ -1,7 +1,7 @@
 <html lang="en"> 
 <head>
     <title>Ethical Enterprises Cleaning Service, LLC - Seattle Metro Area, WA</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="assets/images/logo.ico">
 
@@ -21,19 +21,30 @@
     
     <header class="d-flex flex-wrap justify-content-center align-items-center py-3 border-bottom">
         
-        <a href="#home">
-            <img src="assets/images/logo.png" title="Ethical Enterprises Cleaning Service, LLC" alt="logo" class="logo" />
-        </a>
+        <div class="d-flex flex-column justify-content-center align-items-center logo">
+            <a href="#home">
+                <img src="assets/images/logo.png" title="Ethical Enterprises Cleaning Service, LLC" alt="logo" class="logoImg"/>
+            </a>
+        </div>
         
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#services" class="btn btn-info"><span class="blktext">Packages</span></a></li>
-            <li class="nav-item"><a href="#about" class="btn btn-info"><span class="blktext">About Us</span></a></li>
-            <li class="nav-item"><a href="#contact" class="btn btn-info"><span class="blktext">Contact Us</span></a></li>
-        </ul>
-        
-        <ul class="nav nav-pills">
-            <li class="nav-item contactLi"><h5>(206) 679-8559&nbsp;&middot;&nbsp;<a href="mailto:EthicalEnterprisesLLC@gmail.com">EthicalEnterprisesLLC@gmail.com</a></h5></li>
-        </ul>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+            <div class="d-flex flex-wrap">
+                <ul class="nav nav-pills">
+                    <li class="nav-item mainMenu"><a href="#services" class="btn btn-info"><span class="blktext">Packages</span></a></li>
+                    <li class="nav-item mainMenu"><a href="#about" class="btn btn-info"><span class="blktext">About Us</span></a></li>
+                    <li class="nav-item mainMenu"><a href="#contact" class="btn btn-info"><span class="blktext">Contact Us</span></a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-wrap">            
+                <ul class="nav nav-pills contactMenu">
+                    <li class="nav-item contactLi contactInfo">(206) 679-8559</li>
+                    <li class="nav-item contactLi contactInfo"><a href="mailto:EthicalEnterprisesLLC@gmail.com">EthicalEnterprisesLLC@gmail.com</a></li>
+                </ul>
+            </div>
+
+        </div>
         
     </header>
     
@@ -42,100 +53,101 @@
             <section id="home">
                 <h2>Welcome!</h2>
                 <div class="sectionContent">
-                    <p>We are <strong>Ethical Enterprises Cleaning Service</strong>--  a licensed company helping you protect your family and run your business. With our experienced, knowledgeable and friendly staff, our goal is superior work resulting in complete client satisfaction.</p>
+                    <p class="shout">We are <strong>Ethical Enterprises Cleaning Service</strong>--  a licensed company helping you protect your family and run your business.</p>
 
-                    <p>We offer both <strong>residential and commercial packages</strong>, so whether you're a facility manager or homeowner, we've got something that's perfect for your cleaning requirements-- whether it's a cozy apartment or a busy office suite.</p>
+                    <p class="third">Here at Ethical, we are proud to offer robust <strong>residential and commercial packages</strong>. So whether you're a homeowner or facility manager, we've got something that's perfect for your <a href="#services">cleaning requirements</a>, whether it's a cozy apartment or a bustling office suite.</p>
 
-                    <p>Our <strong>well-trained staff</strong> eliminates the stress of cleaning your space by performing quality work at a price that makes sense.</p>
+                    <p class="third">Our <strong>well-trained employees</strong> eliminate the stress of cleaning your space by performing <a href="#about">quality work</a> at a price that makes sense to you.</p>
 
-                    <p><a href="#contact">Give us a call!</a> It's the first easy step to having a sparkling clean place. We look forward to working with you!</p>
+                    <p class="third">Please reach out to us! We'd love to help <a href="#contact">answer any questions</a> you may have about our services. It's the first easy step to having a sparkling clean place. <strong>We look forward to working with you!</strong></p>
+
+                    <p class="shout">With an experienced, knowledgeable and friendly staff, our goal is simple: Superior work resulting in complete client satisfaction.</p>
+
                 </div>
 
             </section>
 
             <section id="services">
-                <h2>Cleaning Packages</h2>
-                <div class="sectionContent">
-                    <p>We are very proud to offer <strong>residential</strong> as well as <strong>commercial</strong> property cleaning packages!</p>
-                    <p>Click the buttons below for details.</p>   
 
-                    <div class="d-flex flex-wrap justify-content-center align-items-start py-3">
-                        <div class="d-flex flex-column justify-content-center align-items-center" style="padding-right: 25px; border-right:solid 1px lightgrey;">
-                            <img src="assets/images/icon-house.png" style="width:100px;"><br>
-                            <button type="button" class="btn btn-info" id="resBtn" onClick="showList(this.id);">Residential Package</button><br>
-                            <img src="assets/images/icon-office.png" style="width:100px;"><br>
-                            <button type="button" class="btn btn-info" id="comBtn" onClick="showList(this.id);">Commercial Package</button>
+                <h2>Cleaning Packages</h2>
+
+                <div class="sectionContent">
+
+                    <p class="shout">We know how to clean your space well.</p>
+
+                    <p>Ethical Enterprises is very proud to offer <strong>residential</strong> as well as <strong>commercial</strong> property cleaning packages! Please see below for our detailed multi-point checklists.</p>   
+
+                    <div class="d-flex flex-wrap justify-content-center align-items-start servicesDiv">
+
+                        <div class="d-flex justify-content-center align-items-start propType">
+
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img src="assets/images/icon-house.png">
+                                <button type="button" class="btn btn-info" id="resBtn" onClick="showList(this.id);">Residential</button>
+                            </div>
+
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img src="assets/images/icon-office.png">
+                                <button type="button" class="btn btn-info" id="comBtn" onClick="showList(this.id);">Commercial</button>
+                            </div>  
+
                         </div>
-                        <div id="packageDetails" style="width:70%; padding-left:25px;"></div>
+
+                        <div id="packageDetails"></div>
+
                     </div>
+
                 </div>
             </section>
 
             <section id="about">
+
                 <h2>About Us</h2>
+
                 <div class="sectionContent">
-                    <p>At Ethical Enterprises, we value <strong>excellent service, honesty, respect and integrity</strong>.</p>
-                        
-                    <p>Our pricing and value are unmatched-- we offer an affordable service by a thoroughly-trained staff of employees to leave your home or business <strong>sparkling clean</strong>.</p>
+
+                    <p class="shout">Why choose Ethical Enterprises?</p>
+                    
+                    <p>Our core principles are <strong>excellent service, honesty, respect and integrity</strong>. And our pricing and value are unmatched: We offer an affordable service by a thoroughly-trained staff of employees to leave your home or business <strong>sparkling clean</strong>.</p>
 
                     <div class="d-flex flex-wrap justify-content-center align-items-start py-3">
 
                         <div class="pros"><img src="assets/images/icon-gps.png"><h3>Areas of Coverage</h3><p>Snohomish to West Seattle<br>Burien to the Eastside<br><a href="#contact">Contact us</a> for details.</p></div>
+
                         <div class="pros"><img src="assets/images/icon-open.png"><h3>Hours of Operation</h3><p>7 Days a Week<br>7:00a - 4:00p<br>We are open on Holidays!</p></div>
+        
                         <div class="pros"><img src="assets/images/icon-checklist.png"><h3>Extensive Checklist</h3><p>Click <a href="#services">here</a> to see our commercial and residential cleaning packages!</p></div>
                         
                         <div class="pros"><img src="assets/images/icon-team.png"><h3>Experienced Team</h3><p>Our staff is customer-oriented, meticulous and friendly.</p></div>
+
                         <div class="pros"><img src="assets/images/icon-referral.png"><h3>Referral Discount</h3><p>Refer a client to us and receive a $100 off your next cleaning.</p></div>
-                        <div class="pros"><img src="assets/images/icon-woman.png"><h3>Woman-Owned</h3><p>Ethical Enterprises is a proud POC, woman-owned business.</p></div>
+
+                        <div class="pros"><img src="assets/images/icon-woman.png"><h3>Woman-Owned</h3><p>Ethical Enterprises is a proud POC, woman-owned business. We are an equal opportunity employer.</p></div>
 
                     </div>
+
                 </div>
+
             </section>
 
             <section id="contact">
+
                 <h2>Contact Us</h2>
+
                 <div class="sectionContent">
 
-                    <p>We'd be delighted answer any of your questions, or to <strong>schedule an appointment</strong>!</p>
-                    <p>Please fill out the form below to send us a message, or call/email us directly.</p>
-                    <!--
-                    <div class="d-flex flex-wrap justify-content-center align-items-start py-3">
-                        <div style="width:50%; padding-right: 25px; border-right:solid 1px lightgrey;">
-                        <form class="contactForm" style="width:100%;" action="mailto:ethicalenterprisesllc@gmail.com" method="post" enctype=”text/plain”>
-                            <div class="mb-3">
-                                <label for="inputName" class="form-label"><h3 class="h3blank">Your Name</h3></label>
-                                <input type="text" class="form-control" id="inputName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputEmail" class="form-label"><h3 class="h3blank">Your Email Address</h3></label>
-                                <input type="email" class="form-control" id="inputEmail">
-                                    <div id="emailHelp" class="form-text">(We'll never share your email with anyone else.)</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputEmail" class="form-label"><h3 class="h3blank">Property Type</h3></label><br>
-                                <input class="form-check-input" type="radio" name="propType" id="propResidential">
-                                <label class="form-check-label" for="propResidential">Residential&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                <input class="form-check-input" type="radio" name="propType" id="propCommecial">    
-                                <label class="form-check-label" for="propCommecial">Commercial</label>
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputSubject" class="form-label"><h3 class="h3blank">Your Subject</h3></label>
-                                <input type="text" class="form-control" id="inputSubject">
-                            </div>
-                            <div class="mb-3">
-                                <label for="inputMessage"><h3 class="h3blank">Your Message</h3></label>
-                                <textarea cols="40" rows="5" class="form-control" id="inputMessage"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-info">Submit</button>
-                            <button type="reset" class="btn btn-info">Clear</button>
-                        </form>
-                    </div>
-                    -->
-                    <div class="d-flex flex-column justify-content-center align-items-start py-3" style="width:30%; padding-left: 25px;">
-                        <div class="pros" style="width:100%;"><img src="assets/images/icon-phone.png"><h3>Phone</h3><p>(206) 679-8559 </p></div>
-                        <div class="pros" style="width:100%;"><img src="assets/images/icon-email.png"><h3>Email</h3><p><a href="mailto:EthicalEnterprisesLLC@gmail.com">EthicalEnterprises<br>LLC@gmail.com</a></p></div>
-                    </div>
-                </div>
+                    <p>We'd be delighted to answer any of your questions, or to <strong>schedule an appointment</strong>. Please call or send us a text message at (206) 679-8559, 7:00a-4:00p seven days a week, or email us directly at:</p>
+                    
+                    <p><a href="mailto:EthicalEnterprisesLLC@gmail.com">EthicalEnterprisesLLC@gmail.com</a></p>
+                    
+                    <p>Emails are answered within one business day.</p>
+
+                    <p class="shout">Thank you for choosing Ethical Enterprises for your cleaning needs! We truly appreciate your business.</p>
+
+                    <img src="assets/images/logo.ico">
+
+                 </div>
+
             </section>
 
         </main>
@@ -143,12 +155,11 @@
         
     </div>
     <footer class="d-flex flex-wrap justify-content-center align-items-center">
-        <p>Copyright &copy;2022 Ethical Enterprises Cleaning Service, LLC. All rights reserved. <em>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></em>.</p> 
+        <p class="footerP">Copyright &copy;2022 Ethical Enterprises Cleaning Service, LLC. All rights reserved. <em>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></em>.</p> 
     </footer>
 
     <script src="packages.js"></script>
 
-    
 </body>    
     
 </html>
